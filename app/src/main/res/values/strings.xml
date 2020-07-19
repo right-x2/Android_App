@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">hanyang</string>
+    <string-array name="items_name">
+        <item>Woo Yeonwha</item>
+        <item>Woo Yeonwha</item>
+        <item>Woo Yeonwha</item>
+        <item>Woo Yeonwha</item>
+    </string-array>
+    <string-array name="items_description">
+        <item>010-1234-5678</item>
+        <item>010-1234-5678</item>
+        <item>010-1234-5678</item>
+        <item>010-1234-5678</item>
+    </string-array>
 </resources>

@@ -10,8 +10,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import lecture_3.LifeCycleActivity;
+import lecture_3.ListViewActivity;
+import lecture_3.OpenActivity;
+
 public class MainActivity extends AppCompatActivity {
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11;
     TextView textBox = null;
     Context context = this;
     Intent intent = null;
@@ -29,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         btn6= (Button) findViewById(R.id.btn6);
         btn7= (Button) findViewById(R.id.btn7);
         btn8= (Button) findViewById(R.id.btn8);
+        btn9= (Button) findViewById(R.id.btn9);
+        btn10= (Button) findViewById(R.id.btn10);
+        btn11= (Button) findViewById(R.id.btn11);
+
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"화면 전환", Toast.LENGTH_SHORT).show();
                             intent = new Intent(context,MainActivity2.class);
                             startActivity(intent);
+                        break ;
+                    case R.id.btn2 :
+                        Toast.makeText(getApplicationContext(),"화면 전환", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(context,MainActivity2.class);
+                        startActivity(intent);
+                        break ;
+                    case R.id.btn3 :
+                        Toast.makeText(getApplicationContext(),"화면 전환", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(context,MainActivity2.class);
+                        startActivity(intent);
                         break ;
                     case R.id.btn4 :
                             Toast.makeText(getApplicationContext(),"화면 전환", Toast.LENGTH_SHORT).show();
@@ -63,17 +81,30 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(context,MainActivity7.class);
                         startActivity(intent);
                         break ;
-
-
+                    case R.id.btn9 :
+                        Toast.makeText(getApplicationContext(),"화면 전환", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(context, LifeCycleActivity.class);
+                        startActivity(intent);
+                        break ;
+                    case R.id.btn10 :
+                        Toast.makeText(getApplicationContext(),"화면 전환", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(context, ListViewActivity.class);
+                        startActivity(intent);
+                        break ;
                 }
             }
         } ;
 
         btn1.setOnClickListener(onClickListener) ;
+        btn2.setOnClickListener(onClickListener) ;
+        btn3.setOnClickListener(onClickListener) ;
         btn4.setOnClickListener(onClickListener) ;
         btn5.setOnClickListener(onClickListener) ;
         btn6.setOnClickListener(onClickListener) ;
         btn7.setOnClickListener(onClickListener) ;
         btn8.setOnClickListener(onClickListener) ;
+        btn9.setOnClickListener(onClickListener) ;
+        btn10.setOnClickListener(onClickListener) ;
+        btn11.setOnClickListener(onClickListener) ;
     }
 }
